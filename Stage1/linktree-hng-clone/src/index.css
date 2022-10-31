@@ -1,0 +1,38 @@
+:root {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-size: 1rem;
+  font-weight: 400;
+
+  --gray200: hsl(220, 17%, 93%);
+  --gray300: hsl(217, 16%, 84%);
+  --gray400: hsl(218, 15%, 65%);
+  --gray500: hsl(221, 13%, 46%);
+  --gray700: hsl(221, 43%, 11%);
+  --gray900: hsl(220, 43%, 11%);
+  --gray900a3 :hsla(220, 43%, 11%, 0.03);
+  --gray900a5 :hsla(220, 43%, 11%, 0.05);
+  --gray900a8: hsla(220, 43%, 11%, 0.08);
+  --onHover: hsla(218, 24%, 27%, 0.749);
+  --shadows-xs-focused: hsl(246, 91%, 95%);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 1s ease;
+}
+
+.App {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,16 @@
+.bodyContainer {
+  flex: 9;
+  padding: 4rem 7rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+
+@media all and (max-width:768px) {
+  .bodyContainer {
+    padding: 0;
+    padding-top: 4rem;
+    padding-inline: 1rem;
+    row-gap: 1.5rem;
+  }
+}

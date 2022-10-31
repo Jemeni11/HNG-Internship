@@ -1,0 +1,16 @@
+.socialSectionContainer {
+  padding: 1.5rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.socialImagesContainer {
+  display: flex;
+  column-gap: 2rem;
+}
+
+@media all and (max-width:768px) {
+  .socialSectionContainer {
+    padding: 2rem 0;
+  }
+}
