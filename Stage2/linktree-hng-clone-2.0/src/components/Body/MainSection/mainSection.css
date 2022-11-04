@@ -1,0 +1,136 @@
+.mainSectionContainer {
+  flex: 9;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 3.5rem;
+}
+
+#shareButtonContainer {
+  background-image: url("../../../assets/share_button.png");
+  height: 2.75rem;
+  width: 2.75rem;
+  border-radius: 50%;
+}
+
+.profileSection {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+#profile__img {
+  opacity: 1;
+  filter: brightness(100%);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.profile__imgContainer::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-image: url("../../../assets/camera.png");
+  position: absolute;
+  top: calc(4rem + 10%);
+  margin-left: 2.2rem;
+  transition: all 1s ease;
+  display: none;
+}
+
+.profile__imgContainer:hover::after {
+  display: block;
+}
+
+#profile__img:hover,
+#profile__img:focus {
+  opacity: 0.5;
+  filter: brightness(75%);
+  cursor: pointer;
+}
+
+#profile__img:focus {
+  border: 5.5px solid hsla(246, 91%, 95%, 1);
+}
+
+#twitter {
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  color: var(--gray900);
+}
+
+.linkSection {
+  flex: 4;
+}
+
+#linkList {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+  list-style: none;
+}
+
+.linkSectionListItem {
+  width: 100%;
+  height: 100%;
+  border: 1px solid transparent;
+  border-radius: 0.5rem;
+  background-color: var(--gray200);
+  color: var(--gray900);
+  filter: drop-shadow(0px 1px 2px var(--gray900a5));
+  cursor: pointer;
+  padding: 1.5rem 2rem;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  text-align: center;
+}
+
+.linkSectionListItem:hover {
+  border: 1px solid var(--gray300);
+  box-shadow: 0px 1px 2px var(--gray900a5);
+  background-color: var(--gray300);
+}
+
+.linkSectionListItem:focus {
+  border: 1px solid var(--gray400);
+  background-color: var(--gray200);
+}
+
+.linkSectionListItem p {
+  width: 100%;
+  flex: 1;
+}
+
+.linkSectionListItem__subtitle {
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+}
+
+@media all and (max-width: 768px) {
+  .mainSectionContainer {
+    padding: 0;
+    row-gap: 1.5rem;
+  }
+
+  #twitter {
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    color: var(--gray700);
+  }
+
+  #shareButtonContainer {
+    content: "";
+    background-image: url("../../../assets/mobile_share_button.png");
+  }
+}
