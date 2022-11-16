@@ -1,0 +1,92 @@
+/* Frame Two */
+#FrameTwo {
+  padding-top: 2.44rem;
+  padding-bottom: 3.31rem;
+}
+
+#FrameTwo h2 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  color: black;
+  line-height: 3.75rem;
+  margin-bottom: 2.68rem;
+}
+
+#FrameTwoGrid {
+  display: grid;
+  grid-template-columns: repeat(4, calc((100% - 4.5rem) / 4));
+  grid-template-rows: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1075px) {
+  /* Frame Two */
+  #FrameTwo {
+    padding-top: 2.44rem;
+    padding-bottom: 3.31rem;
+  }
+
+  #FrameTwo h2 {
+    font-size: 3rem;
+    line-height: 3.75rem;
+    margin-bottom: 2.68rem;
+  }
+
+  #FrameTwoGrid {
+    gap: 1.5rem;
+  }
+}
+
+@media all and (min-width: 1024px) and (max-width: 1280px) {
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  #FrameTwo {
+    padding-top: 0.81rem;
+    padding-inline: 2.08rem;
+    padding-bottom: 3.3rem;
+  }
+
+  #FrameTwo h2 {
+    font-size: 2.25rem;
+  }
+
+  #FrameTwoGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+  #FrameTwo {
+    padding-top: 0.81rem;
+    padding-inline: 2.08rem;
+    padding-bottom: 3.3rem;
+  }
+
+  #FrameTwo h2 {
+    font-size: 2.25rem;
+  }
+
+  #FrameTwoGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media all and (max-width: 480px) {
+  #FrameTwo {
+    padding-top: 0.81rem;
+    padding-inline: 2.08rem;
+    padding-bottom: 3.3rem;
+  }
+
+  #FrameTwo h2 {
+    font-size: 2.25rem;
+  }
+
+  #FrameTwoGrid {
+    grid-template-columns: 1fr;
+  }
+}

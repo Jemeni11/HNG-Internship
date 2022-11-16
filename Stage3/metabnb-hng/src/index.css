@@ -1,0 +1,50 @@
+:root {
+  font-family: "Red Rose", cursive;
+  font-size: 1rem;
+  font-weight: 400;
+
+  font-synthesis: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  /* Colours */
+  --black_text: hsl(0, 0%, 26%);
+  --footer_background: hsl(256, 1%, 11%);
+  --footer_white: hsl(225, 40%, 96%);
+  --deep_purple: hsl(319, 65%, 38%);
+  --fade: hsl(0, 0%, 84%);
+  --mid_gray: hsl(198, 16%, 84%);
+  --modal_text: hsl(0, 0%, 20%);
+  --modal_background: hsla(0, 0%, 25%, 0.3);
+
+  /* Gradients */
+  --majorGradient: linear-gradient(
+    90deg,
+    rgb(160, 34, 120) 11.45%,
+    #a02279 11.45%
+  );
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.clr-dp {
+  color: var(--deep_purple);
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+#modalRoot {
+  position: relative;
+  z-index: 999;
+}
+
+/* #root * {
+  outline: 1px solid darkblue;
+} */

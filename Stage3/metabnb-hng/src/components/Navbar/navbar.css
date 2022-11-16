@@ -1,0 +1,92 @@
+.NavbarContainer {
+  width: 100%;
+  min-height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.68rem 6.25rem;
+  padding-bottom: 0;
+}
+
+.NavbarContainer ul {
+  list-style: none;
+  display: flex;
+}
+
+.NavbarContainer ul li {
+  padding-inline: 1rem;
+}
+
+.NavbarContainer ul li a {
+  text-decoration: none;
+  color: var(--black_text);
+  font-size: 1.25rem;
+  line-height: 1.56rem;
+}
+
+.NavbarButtonContainer button {
+  background: var(--majorGradient);
+  color: white;
+  border: none;
+  border-radius: 0.625rem;
+  padding: 0.875rem 1.65625rem;
+  font-size: 1rem;
+  line-height: 1.25rem;
+}
+
+.NavbarButtonContainer button:hover {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 900px) and (max-width: 1075px) {
+  .NavbarContainer {
+    min-height: 2.13rem;
+    padding: 1.9rem 4.44rem;
+    padding-bottom: 0;
+  }
+
+  .NavbarContainer ul li {
+    padding-inline: 0.71rem;
+  }
+
+  .NavbarContainer ul li a {
+    font-size: 0.98rem;
+    line-height: 1.11rem;
+  }
+
+  .NavbarButtonContainer button {
+    border-radius: 0.625rem;
+    padding: 0.62rem 1.18rem;
+    font-size: 0.8rem;
+    line-height: 0.88rem;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .NavbarContainer {
+    min-height: 2.13rem;
+    padding: 1.9rem 2.08rem;
+    padding-bottom: 0;
+    flex-direction: column;
+  }
+
+  .NavbarContainer > * {
+    padding: 1rem 0;
+  }
+
+  .NavbarContainer ul li {
+    padding-inline: 0.71rem;
+  }
+
+  .NavbarContainer ul li a {
+    font-size: 0.98rem;
+    line-height: 1.11rem;
+  }
+
+  .NavbarButtonContainer button {
+    border-radius: 0.625rem;
+    padding: 0.62rem 1.18rem;
+    font-size: 0.8rem;
+    line-height: 0.88rem;
+  }
+}

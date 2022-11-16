@@ -1,0 +1,192 @@
+/*! Frame One */
+
+#FrameOne {
+  display: flex;
+  gap: 6.18rem;
+  padding-bottom: 4.18rem;
+}
+
+.FrameOneInfoContainer {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 1.81rem 0;
+}
+
+.FrameOneInfoContainer h1 {
+  letter-spacing: -0.02em;
+  font-weight: 400;
+  font-size: 3rem;
+}
+
+.FrameOneInfoContainer p {
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.18rem;
+}
+
+.FrameOneSearchContainer {
+  width: 95%;
+  display: flex;
+}
+
+.FrameOneSearchContainer input {
+  flex: 9;
+  border-radius: 0.5rem 0 0 0.5rem;
+  border: 1px solid #a3a3a3;
+  outline: none;
+  padding-left: 1rem;
+}
+
+.FrameOneSearchContainer button {
+  flex: 1;
+  border-radius: 0 0.5rem 0.5rem 0;
+  background: var(--majorGradient);
+  border: none;
+  color: white;
+  font-size: 1rem;
+  line-height: 1.19rem;
+  padding: 1.06rem 3.5rem;
+}
+
+.FrameOneSearchContainer button:hover {
+  cursor: pointer;
+}
+
+.FrameOneImageContainer {
+  flex: 1;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.FrameOneImageContainer div img:first-of-type {
+  margin-bottom: 0.5rem;
+}
+
+#FOIC_left {
+  margin-top: 6.19rem;
+}
+
+#FOIC_right {
+  margin-bottom: 6.19rem;
+}
+
+/*! Media Queries */
+
+@media screen and (min-width:768px) and (max-width: 1075px) {
+  #FrameOne,
+  #FrameTwo,
+  #FrameThree {
+    padding-inline: 4.44rem;
+  }
+
+  /* Frame One */
+
+  #FrameOne {
+    gap: 4.39rem;
+    padding-bottom: 2.97rem;
+  }
+
+  .FrameOneInfoContainer {
+    gap: 2.13rem;
+    padding: 1.28rem 0;
+  }
+
+  .FrameOneInfoContainer h1 {
+    font-size: 3rem;
+  }
+
+  .FrameOneInfoContainer p {
+    font-size: 1.5rem;
+    line-height: 1.55rem;
+  }
+
+  .FrameOneSearchContainer {
+    width: 95%;
+  }
+
+  .FrameOneSearchContainer input {
+    padding-left: 0.71rem;
+  }
+
+  .FrameOneSearchContainer button {
+    font-size: 1rem;
+    line-height: 0.85rem;
+    padding: 0.75rem 2.49rem;
+  }
+
+  .FrameOneImageContainer div img:first-of-type {
+    margin-bottom: 0.36rem;
+  }
+
+  #FOIC_left {
+    margin-top: 4.4rem;
+  }
+
+  #FOIC_right {
+    margin-bottom: 4.4rem;
+  }
+}
+
+/* @media screen and (max-width: 900px) {
+} */
+
+@media all and (max-width: 480px) {
+  #FrameOne {
+    padding-inline: 2.08rem;
+    flex-direction: column;
+    gap: 2.06rem;
+    padding-bottom: 1.39rem;
+  }
+
+  .FrameOneInfoContainer {
+    flex: 1;
+    gap: 1rem;
+    padding: 0.6rem 0;
+  }
+
+  .FrameOneInfoContainer h1 {
+    font-size: 2.5rem;
+  }
+
+  .FrameOneInfoContainer p {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+
+  .FrameOneSearchContainer {
+    width: 100%;
+    min-height: 3.5rem;
+  }
+
+  .FrameOneSearchContainer input {
+    padding-left: 0.71rem;
+    flex: 7;
+    width: 70%;
+  }
+
+  .FrameOneSearchContainer button {
+    flex: 3;
+    width: 30%;
+    font-size: 1rem;
+    line-height: 0.85rem;
+    padding: 0.75rem 1rem;
+  }
+
+  .FrameOneImageContainer img {
+    max-width: 100%;
+  }
+
+  .FrameOneImageContainer div img:first-of-type {
+    margin-bottom: 0.36rem;
+  }
+
+  #FOIC_left {
+    margin-top: 4.4rem;
+  }
+
+  #FOIC_right {
+    margin-bottom: 4.4rem;
+  }
+}

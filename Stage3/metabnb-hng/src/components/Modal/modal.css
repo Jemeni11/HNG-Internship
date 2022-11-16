@@ -1,0 +1,90 @@
+.modalContainer {
+  position: fixed;
+  width: 100%;
+  min-height: 100%;
+  background: var(--modal_background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal {
+  min-height: 21.7rem;
+  width: 37.5rem;
+  background-color: white;
+  color: var(--black_text);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.modalHeader {
+  flex: 2;
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--mid_gray);
+}
+
+.modalHeader p {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.875rem;
+  color: var(--modal_text);
+}
+
+.modalHeader button {
+  color: transparent;
+  border: none;
+}
+
+.modalHeader button:hover {
+  cursor: pointer;
+}
+
+.modalBody {
+  flex: 8;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.modalBody > p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  line-height: 1.25rem;
+}
+
+.modalBody > div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.modalButton {
+  padding: 0.75rem 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid var(--mid_gray);
+  transition: all 300ms ease-in-out;
+}
+
+.modalButton:hover {
+  border-color: hsl(198, 16%, 70%);
+  cursor: pointer;
+}
+
+.modalButton > div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.modalButton > div > span {
+  font-family: "Sora", sans-serif;
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.44rem;
+}

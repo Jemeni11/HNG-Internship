@@ -1,0 +1,27 @@
+.CommunityContainer {
+  padding-top: 2rem;
+  padding-inline: 6.25rem;
+  padding-bottom: 5rem;
+  text-align: center;
+  
+}
+
+.CommunityContainer h1,
+.CommunityContainer p {
+  padding: 0.7rem 0;
+}
+
+.CommunityContainer button {
+  margin-top: 0.5rem;
+  background: var(--majorGradient);
+  color: white;
+  border: none;
+  border-radius: 0.625rem;
+  padding: 0.875rem 1.65625rem;
+  font-size: 1rem;
+  line-height: 1.25rem;
+}
+
+.CommunityContainer button:hover {
+  cursor: pointer;
+}

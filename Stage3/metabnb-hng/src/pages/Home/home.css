@@ -1,0 +1,84 @@
+.HomeContainer {
+  padding-top: 7.8rem;
+}
+
+#FrameOne,
+#FrameTwo,
+#FrameThree {
+  padding-inline: 6.25rem;
+}
+
+/* Banner */
+
+#Banner {
+  width: 100%;
+  height: 4.375rem;
+  padding: 0.625rem 6.25rem;
+  background: var(--majorGradient);
+  margin-bottom: 1.18rem;
+}
+
+#BannerImageContainer {
+  padding-inline: 2.4rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media all and (min-width: 700px) and (max-width: 1024px) {
+  /* Banner */
+
+  #Banner {
+    height: max-content;
+    padding: 0.304rem 0.2rem;
+  }
+
+  #BannerImageContainer {
+    padding-inline: 0.8rem;
+  }
+
+  #BannerImageContainer img {
+    padding: 0.5rem 0;
+  }
+}
+
+@media all and (min-width: 480px) and (max-width: 700px) {
+  /* Banner */
+
+  #Banner {
+    height: max-content;
+    padding: 0.625rem 0.25rem;
+  }
+
+  #BannerImageContainer {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #BannerImageContainer img {
+    padding: 0.5rem;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .HomeContainer {
+    padding-top: 4rem;
+  }
+
+  /* Banner */
+
+  #Banner {
+    width: 100%;
+    height: max-content;
+    padding: 0.625rem 4rem;
+    margin-bottom: 1.18rem;
+  }
+
+  #BannerImageContainer {
+    padding-inline: 0.8rem;
+    flex-direction: column;
+  }
+
+  #BannerImageContainer img {
+    padding: 0.5rem 0;
+  }
+}

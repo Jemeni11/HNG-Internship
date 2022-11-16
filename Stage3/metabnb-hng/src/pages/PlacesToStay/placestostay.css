@@ -1,0 +1,178 @@
+.PlacesContainer {
+  padding-inline: 6.25rem;
+}
+
+.PlacesNavbar {
+  margin-top: 7.18rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.PlacesNavbar ul {
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+}
+
+.PlacesNavbar ul li {
+  transition: all 300ms ease;
+}
+
+.PlacesNavbar ul li:hover {
+  transform: scaleX(1.15);
+}
+
+.PlacesNavbar button {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  padding: 0.875rem 0.8125rem;
+  background: linear-gradient(124.4deg, #ffffff 10.8%, #ffffff 87.34%);
+  border: 1px solid hsl(0, 0%, 71%);
+  border-radius: 0.5rem;
+}
+
+#PlacesGrid {
+  margin-top: 4rem;
+  margin-bottom: 5.75rem;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, calc((100% - 4.5rem) / 4));
+  grid-template-rows: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.PlacesNavbar ul li:hover,
+.PlacesNavbar button:hover {
+  cursor: pointer;
+}
+
+@media all and (min-width: 1130px) and (max-width: 1280px) {
+  .PlacesContainer {
+    padding-inline: 4.44rem;
+  }
+
+  .PlacesNavbar {
+    margin-top: 5.11rem;
+  }
+
+  .PlacesNavbar ul {
+    gap: 3rem;
+  }
+
+  .PlacesNavbar button {
+    gap: 2.5rem;
+    padding: 0.62rem 0.58rem;
+  }
+
+  #PlacesGrid {
+    margin-top: 2.84rem;
+    margin-bottom: 4.09rem;
+    gap: 1.5rem;
+  }
+}
+
+@media all and (min-width: 900px) and (max-width: 1130px) {
+  .PlacesContainer {
+    padding-inline: 6.25rem;
+  }
+
+  .PlacesNavbar {
+    margin-top: 7.18rem;
+  }
+
+  .PlacesNavbar ul {
+    gap: 3rem;
+  }
+
+  .PlacesNavbar button {
+    gap: 2.5rem;
+    padding: 0.875rem 0.8125rem;
+    border-radius: 0.5rem;
+  }
+
+  #PlacesGrid {
+    margin-top: 4rem;
+    margin-bottom: 5.75rem;
+    gap: 1.5rem;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 900px) {
+  .PlacesContainer {
+    padding-inline: 6.25rem;
+  }
+
+  .PlacesNavbar {
+    margin-top: 7.18rem;
+  }
+
+  .PlacesNavbar ul {
+    gap: 3rem;
+  }
+
+  .PlacesNavbar button {
+    gap: 2.5rem;
+    padding: 0.875rem 0.8125rem;
+    border-radius: 0.5rem;
+  }
+
+  #PlacesGrid {
+    margin-top: 4rem;
+    margin-bottom: 5.75rem;
+    gap: 1.5rem;
+  }
+}
+
+@media all and (min-width: 480px) and (max-width: 768px) {
+  .PlacesContainer {
+    padding-inline: 6.25rem;
+  }
+
+  .PlacesNavbar {
+    margin-top: 7.18rem;
+  }
+
+  .PlacesNavbar ul {
+    gap: 3rem;
+  }
+
+  .PlacesNavbar button {
+    gap: 2.5rem;
+    padding: 0.875rem 0.8125rem;
+    border-radius: 0.5rem;
+  }
+
+  #PlacesGrid {
+    margin-top: 4rem;
+    margin-bottom: 5.75rem;
+    gap: 1.5rem;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .PlacesContainer {
+    padding-inline: 6.25rem;
+  }
+
+  .PlacesNavbar {
+    margin-top: 7.18rem;
+  }
+
+  .PlacesNavbar ul {
+    gap: 3rem;
+  }
+
+  .PlacesNavbar button {
+    gap: 2.5rem;
+    padding: 0.875rem 0.8125rem;
+    border-radius: 0.5rem;
+  }
+
+  #PlacesGrid {
+    margin-top: 4rem;
+    margin-bottom: 5.75rem;
+    gap: 1.5rem;
+  }
+}
