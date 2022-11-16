@@ -52,15 +52,14 @@
 
 .FooterInfoList li:hover {
   cursor: pointer;
-  transform: scaleX(1.15);
+  transform: scaleX(1.05);
 }
 
-@media all and (min-width: 768px) and (max-width: 1075px) {
+@media all and (min-width: 768px) and (max-width: 1024px) {
   .FooterContainer {
     min-height: 14.2rem;
-    padding: 2.35rem 4.44rem;
-    padding-right: 3rem;
-    gap: 7.1rem;
+    padding: 2.35rem 2.08rem;
+    gap: 2.5rem;
   }
 
   .FooterContainer > * {
@@ -89,10 +88,31 @@
 }
 
 @media all and (min-width: 480px) and (max-width: 768px) {
-  /* .FooterContainer,
-  .FooterContainer * {
-    outline: 1px solid red;
-  } */
+  .FooterContainer {
+    flex-direction: column-reverse;
+    padding: 2.08rem;
+    gap: 2.5rem;
+  }
+
+  .FooterLogoContainer {
+    margin-bottom: 4.3rem;
+  }
+
+  .FooterSocialLogosContainer {
+    gap: 1.3rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .FooterInfoListTitle {
+    font-size: 1.3rem;
+    line-height: 1rem;
+    padding-bottom: 1.1rem;
+  }
+
+  .FooterInfoList li {
+    font-size: 1rem;
+    line-height: 1.6rem;
+  }
 }
 
 @media all and (max-width: 480px) {

@@ -48,131 +48,67 @@
   cursor: pointer;
 }
 
-@media all and (min-width: 1130px) and (max-width: 1280px) {
+@media all and (min-width: 768px) and (max-width: 1024px) {
   .PlacesContainer {
-    padding-inline: 4.44rem;
+    padding-inline: 2.08rem;
   }
 
   .PlacesNavbar {
-    margin-top: 5.11rem;
+    margin-top: 3rem;
+    gap: 2rem;
   }
 
   .PlacesNavbar ul {
-    gap: 3rem;
-  }
-
-  .PlacesNavbar button {
-    gap: 2.5rem;
-    padding: 0.62rem 0.58rem;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
   }
 
   #PlacesGrid {
-    margin-top: 2.84rem;
-    margin-bottom: 4.09rem;
-    gap: 1.5rem;
-  }
-}
-
-@media all and (min-width: 900px) and (max-width: 1130px) {
-  .PlacesContainer {
-    padding-inline: 6.25rem;
-  }
-
-  .PlacesNavbar {
-    margin-top: 7.18rem;
-  }
-
-  .PlacesNavbar ul {
-    gap: 3rem;
-  }
-
-  .PlacesNavbar button {
-    gap: 2.5rem;
-    padding: 0.875rem 0.8125rem;
-    border-radius: 0.5rem;
-  }
-
-  #PlacesGrid {
-    margin-top: 4rem;
-    margin-bottom: 5.75rem;
-    gap: 1.5rem;
-  }
-}
-
-@media all and (min-width: 768px) and (max-width: 900px) {
-  .PlacesContainer {
-    padding-inline: 6.25rem;
-  }
-
-  .PlacesNavbar {
-    margin-top: 7.18rem;
-  }
-
-  .PlacesNavbar ul {
-    gap: 3rem;
-  }
-
-  .PlacesNavbar button {
-    gap: 2.5rem;
-    padding: 0.875rem 0.8125rem;
-    border-radius: 0.5rem;
-  }
-
-  #PlacesGrid {
-    margin-top: 4rem;
-    margin-bottom: 5.75rem;
-    gap: 1.5rem;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
 @media all and (min-width: 480px) and (max-width: 768px) {
   .PlacesContainer {
-    padding-inline: 6.25rem;
+    padding-inline: 2.08rem;
   }
 
   .PlacesNavbar {
-    margin-top: 7.18rem;
+    margin-top: 3rem;
+    gap: 2rem;
+    flex-direction: column-reverse;
   }
 
   .PlacesNavbar ul {
-    gap: 3rem;
-  }
-
-  .PlacesNavbar button {
-    gap: 2.5rem;
-    padding: 0.875rem 0.8125rem;
-    border-radius: 0.5rem;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
   }
 
   #PlacesGrid {
-    margin-top: 4rem;
-    margin-bottom: 5.75rem;
-    gap: 1.5rem;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
 @media all and (max-width: 480px) {
   .PlacesContainer {
-    padding-inline: 6.25rem;
+    padding-inline: 2.08rem;
   }
 
   .PlacesNavbar {
-    margin-top: 7.18rem;
+    margin-top: 3rem;
+    gap: 2rem;
+    flex-direction: column-reverse;
   }
 
   .PlacesNavbar ul {
-    gap: 3rem;
-  }
-
-  .PlacesNavbar button {
-    gap: 2.5rem;
-    padding: 0.875rem 0.8125rem;
-    border-radius: 0.5rem;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
   }
 
   #PlacesGrid {
-    margin-top: 4rem;
-    margin-bottom: 5.75rem;
-    gap: 1.5rem;
+    grid-template-columns: 1fr;
   }
 }
