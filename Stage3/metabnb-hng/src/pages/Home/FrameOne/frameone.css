@@ -138,6 +138,13 @@
   }
 }
 
+@media all and (min-width:600px) and (max-width:768px) {
+  .FrameOneImageContainer {
+    width: 70%;
+    margin-inline: 15%;
+  }
+}
+
 @media all and (min-width: 480px) and (max-width: 768px) {
   #FrameOne {
     padding-inline: 2.08rem;
